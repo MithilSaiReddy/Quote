@@ -8,7 +8,7 @@ async function loadQuote()
 	const userToken = urlParams.get("token");
 	console.log("Token from url",userToken);
 	
-	if(userToken !== TOKEN)
+	if(userToken == TOKEN)
 	{
 		document.body.innerHTML = "<h1>Access Denied</h1>";
 		
